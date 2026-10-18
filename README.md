@@ -29,11 +29,10 @@ Options:
   -w, --wait <WAIT>              In infinite mode, the wait time in seconds between each tree [default: 4]
   -S, --screensaver              Screensaver mode: equivalent to -li and quit on any keypress
   -m, --message <MESSAGE>        Attach message next to tree
-  -b, --base <BASE>              Ascii art plant base to use [default: 1]
+  -b, --base <BASE>              Ascii art plant base to use [default: 1] [possible values: 1, 2]
   -M, --multiplier <MULTIPLIER>  The branch multiplier; higher -> less branches [default: 3]
   -L, --life <LIFE>              The starting life of the tree higher -> bigger tree [default: 32]
   -s, --seed <SEED>              Random number seed for reproducable trees
-  -v, --verbose                  Whether there should be debug prints
   -h, --help                     Print help
   -V, --version                  Print version
 ```
