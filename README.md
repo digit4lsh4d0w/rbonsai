@@ -5,9 +5,9 @@ This is a port of `cbonsai` to rust. Check out the original
 
 `rbonsai` is a bonsai tree generator, written in Rust using crossterm. It creates
 an ascii bonsai tree that is colored using your terminals color scheme. It is
-also configurable via CLI arguments - see [usage](#usage). It can print a static
-tree to your terminal, or you can watch it grow live. There is also a screensaver
-mode to repeatedly grow trees!
+also configurable via CLI arguments - see [usage](#usage). By default it prints
+a static tree to your terminal; use `--live` to watch it grow, or
+`--screensaver` to repeatedly grow trees.
 
 ## Installation
 
@@ -32,7 +32,6 @@ Options:
   -b, --base <BASE>              Ascii art plant base to use [default: 1]
   -M, --multiplier <MULTIPLIER>  The branch multiplier; higher -> less branches [default: 3]
   -L, --life <LIFE>              The starting life of the tree higher -> bigger tree [default: 32]
-  -p, --print                    Print tree to terminal when finished
   -s, --seed <SEED>              Random number seed for reproducable trees
   -v, --verbose                  Whether there should be debug prints
   -h, --help                     Print help
@@ -45,7 +44,7 @@ For a new bonsai tree every time you open a terminal, add the following to the
 end of your ~/.bashrc:
 
 ```bash
-rbonsai -p
+rbonsai
 ```
 
 ## Missing Features
